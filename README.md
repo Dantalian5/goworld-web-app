@@ -29,7 +29,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/github_username/repo_name">
+  <a href="https://github.com/Dantalian5/goworld-web-app">
     <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
@@ -40,11 +40,11 @@
     <a href="https://www.frontendmentor.io/challenges/rest-countries-api-with-color-theme-switcher-5cacc469fec04111f7b848ca">REST Countries API with color theme switcher challenge on Frontend Mentor</a>.
     <br />
     <br />
-    <a href="https://github.com/github_username/repo_name">Live Site</a>
+    <a href="https://github.com/Dantalian5/goworld-web-app">Live Site</a>
     ·
-    <a href="https://github.com/github_username/repo_name/issues">Report Bug</a>
+    <a href="https://github.com/Dantalian5/goworld-web-app/issues">Report Bug</a>
     ·
-    <a href="https://github.com/github_username/repo_name/issues">Request Feature</a>
+    <a href="https://github.com/Dantalian5/goworld-web-app/issues">Request Feature</a>
   </p>
 </div>
 
@@ -79,8 +79,6 @@
 ## About The Project
 
 [![Product Name Screen Shot][product-screenshot]](https://example.com)
-
-Here's a blank template to get started: To avoid retyping too much info. Do a search and replace with your text editor for the following: `github_username`, `repo_name`, `twitter_handle`, `linkedin_username`, `email_client`, `email`, `project_title`, `project_description`
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -145,7 +143,7 @@ Users should be able to:
 - [ ] Click through to the border countries on the detail page
 - [ ] Toggle the color scheme between light and dark mode
 
-See the [open issues](https://github.com/github_username/repo_name/issues) for a full list of proposed features (and known issues).
+See the [open issues](https://github.com/Dantalian5/goworld-web-app/issues) for a full list of proposed features (and known issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -170,7 +168,7 @@ Don't forget to give the project a star! Thanks again!
 
 ## License
 
-Distributed under the MIT License. See `LICENSE.txt` for more information.
+Distributed under the MIT License. See `LICENSE` for more information.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -178,9 +176,13 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 ## Contact
 
-Your Name - [@twitter_handle](https://twitter.com/twitter_handle) - email@email_client.com
+- Website - [Marcos Valenzuela](https://marcosvalenzuela.netlify.app)
+- Frontend Mentor - [@Dantalian5](https://www.frontendmentor.io/profile/Dantalian5)
+- Github - [@Dantalian5](https://github.com/Dantalian5)
+- Linkedin - [Marcos Valenzuela](https://www.linkedin.com/in/marcos-valenzuela-coding)
+- Twitter - [@Dantalian5](https://www.twitter.com/Dantalian5)
 
-Project Link: [https://github.com/github_username/repo_name](https://github.com/github_username/repo_name)
+Project Link: [https://github.com/Dantalian5/goworld-web-app](https://github.com/Dantalian5/goworld-web-app)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -195,18 +197,18 @@ Project Link: [https://github.com/github_username/repo_name](https://github.com/
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 
-[contributors-shield]: https://img.shields.io/github/contributors/github_username/repo_name.svg?style=for-the-badge
-[contributors-url]: https://github.com/github_username/repo_name/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/github_username/repo_name.svg?style=for-the-badge
-[forks-url]: https://github.com/github_username/repo_name/network/members
-[stars-shield]: https://img.shields.io/github/stars/github_username/repo_name.svg?style=for-the-badge
-[stars-url]: https://github.com/github_username/repo_name/stargazers
-[issues-shield]: https://img.shields.io/github/issues/github_username/repo_name.svg?style=for-the-badge
-[issues-url]: https://github.com/github_username/repo_name/issues
-[license-shield]: https://img.shields.io/github/license/github_username/repo_name.svg?style=for-the-badge
-[license-url]: https://github.com/github_username/repo_name/blob/master/LICENSE.txt
+[contributors-shield]: https://img.shields.io/github/contributors/Dantalian5/goworld-web-app.svg?style=for-the-badge
+[contributors-url]: https://github.com/Dantalian5/goworld-web-app/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/Dantalian5/goworld-web-app.svg?style=for-the-badge
+[forks-url]: https://github.com/Dantalian5/goworld-web-app/network/members
+[stars-shield]: https://img.shields.io/github/stars/Dantalian5/goworld-web-app.svg?style=for-the-badge
+[stars-url]: https://github.com/Dantalian5/goworld-web-app/stargazers
+[issues-shield]: https://img.shields.io/github/issues/Dantalian5/goworld-web-app.svg?style=for-the-badge
+[issues-url]: https://github.com/Dantalian5/goworld-web-app/issues
+[license-shield]: https://img.shields.io/github/license/Dantalian5/goworld-web-app.svg?style=for-the-badge
+[license-url]: https://github.com/Dantalian5/goworld-web-app/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/linkedin_username
+[linkedin-url]: https://linkedin.com/in/marcos-valenzuela-coding
 [product-screenshot]: images/screenshot.png
 [Next.js]: https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white
 [Next-url]: https://nextjs.org/
