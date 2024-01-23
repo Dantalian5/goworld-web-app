@@ -2,7 +2,26 @@
 export default {
 	content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
 	theme: {
-		extend: {},
+		fontFamily: {
+			nunito: ['nunito-sans', 'sans-serif'],
+		},
+		colors: {
+			dblue: {
+				100: '#2b3945',
+				200: '#202c37',
+				300: '#111517',
+			},
+			dgray: {
+				100: '#fafafa',
+				200: '#858585',
+			},
+			white: '#ffffff',
+		},
+		extend: {
+			boxShadow: {
+				s: '0px 2px 4px 0px rgba(0, 0, 0, 0.06)',
+			},
+		},
 	},
 	plugins: [],
 };

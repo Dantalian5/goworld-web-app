@@ -1,10 +1,12 @@
+import Header from '@/components/Header';
+import Main from '@/components/Main';
+
 function App() {
 	return (
-		<>
-			<h1 className="text-3xl font-bold underline border border-green-700">
-				Hello world
-			</h1>
-		</>
+		<div className=" bg-dgray-100">
+			<Header />
+			<Main />
+		</div>
 	);
 }
 
