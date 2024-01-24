@@ -3,7 +3,7 @@ import Main from '@/components/Main';
 
 function App() {
 	return (
-		<div className=" bg-dgray-100">
+		<div className=" bg-dgray-100 min-h-svh">
 			<Header />
 			<Main />
 		</div>

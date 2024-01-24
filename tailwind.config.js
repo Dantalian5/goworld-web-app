@@ -17,9 +17,13 @@ export default {
 			},
 			white: '#ffffff',
 		},
+		borderRadius: {
+			s: '5px',
+		},
 		extend: {
 			boxShadow: {
 				s: '0px 2px 4px 0px rgba(0, 0, 0, 0.06)',
+				m: '0px 2px 9px 0px rgba(0, 0, 0, 0.05)',
 			},
 		},
 	},
