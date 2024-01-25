@@ -32,7 +32,7 @@ const svgArrow = (
 );
 type FilterType = {
 	country: string;
-	region: 'none' | 'africa' | 'america' | 'asia' | 'europe' | 'oceania';
+	region: 'none' | 'Africa' | 'America' | 'Asia' | 'Europe' | 'Oceania';
 };
 
 const Filter = () => {
@@ -41,6 +41,10 @@ const Filter = () => {
 		region: 'none',
 	});
 	const [regionState, setRegionState] = useState<boolean>(false);
+	function selectRegion(e: any) {
+		setFilter((prev) => ({...prev, region: e.target.innerText}));
+		setRegionState(false);
+	}
 	return (
 		<form
 			onSubmit={(e) => e.preventDefault()}
@@ -65,9 +69,9 @@ const Filter = () => {
 			</div>
 			<div className="relative">
 				<button
-					className="flex items-center gap-x-[62px] px-6 py-4 bg-white rounded-s"
+					className="flex items-center justify-between gap-x-[62px] min-w-[200px] px-6 py-4 bg-white rounded-s"
 					onClick={() => setRegionState((prev) => !prev)}>
-					Filter by Region
+					{filter.region === 'none' ? 'Filter by Region' : filter.region}
 					{svgArrow}
 				</button>
 				<ul
@@ -81,34 +85,19 @@ const Filter = () => {
 						</button>
 					</li>
 					<li>
-						<button
-							onClick={() => setFilter((prev) => ({...prev, region: 'none'}))}>
-							Africa
-						</button>
+						<button onClick={selectRegion}>Africa</button>
 					</li>
 					<li>
-						<button
-							onClick={() => setFilter((prev) => ({...prev, region: 'none'}))}>
-							America
-						</button>
+						<button onClick={selectRegion}>America</button>
 					</li>
 					<li>
-						<button
-							onClick={() => setFilter((prev) => ({...prev, region: 'none'}))}>
-							Asia
-						</button>
+						<button onClick={selectRegion}>Asia</button>
 					</li>
 					<li>
-						<button
-							onClick={() => setFilter((prev) => ({...prev, region: 'none'}))}>
-							Europe
-						</button>
+						<button onClick={selectRegion}>Europe</button>
 					</li>
 					<li>
-						<button
-							onClick={() => setFilter((prev) => ({...prev, region: 'none'}))}>
-							Oceania
-						</button>
+						<button onClick={selectRegion}>Oceania</button>
 					</li>
 				</ul>
 			</div>
