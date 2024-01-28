@@ -1,6 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 export default {
 	content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
+	darkMode: 'class',
 	theme: {
 		fontFamily: {
 			nunito: ['nunito-sans', 'sans-serif'],
@@ -20,11 +21,15 @@ export default {
 		borderRadius: {
 			s: '5px',
 		},
+		boxShadow: {
+			s: '0px 2px 4px 0px rgba(0, 0, 0, 0.06)',
+			m: '0px 2px 9px 0px rgba(0, 0, 0, 0.05)',
+			card: '0px 0px 7px 2px rgba(0, 0, 0, 0.03)',
+			btn: '0px 0px 7px 0px rgba(0, 0, 0, 0.29)',
+		},
 		extend: {
-			boxShadow: {
-				s: '0px 2px 4px 0px rgba(0, 0, 0, 0.06)',
-				m: '0px 2px 9px 0px rgba(0, 0, 0, 0.05)',
-				card: '0px 0px 7px 2px rgba(0, 0, 0, 0.03)',
+			flex: {
+				card: '0 1 16.5rem',
 			},
 		},
 	},
