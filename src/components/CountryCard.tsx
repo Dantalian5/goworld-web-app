@@ -3,10 +3,10 @@ import {Link} from 'react-router-dom';
 const CountryCard = ({country}: any) => {
 	return (
 		<Link
-			to={`/countries/${country.name}`}
+			to={`/countries/${country.name.common}`}
 			state={country}
 			className="flex-card">
-			<div className=" w-full bg-white dark:bg-dblue-100 shadow-card rounded-s overflow-hidden cursor-pointer">
+			<div className=" w-full h-full bg-white dark:bg-dblue-100 shadow-card rounded-s overflow-hidden cursor-pointer">
 				<div className="w-full h-40 flex alignitems-center justify-center">
 					<img
 						src={country.flags.png}
@@ -15,7 +15,7 @@ const CountryCard = ({country}: any) => {
 					/>
 				</div>
 				<div className=" px-6 pt-6 pb-11 font-nunito text-dblue-300 dark:text-white">
-					<h3 className="font-extrabold text-lg mb-4">{country.name}</h3>
+					<h3 className="font-extrabold text-lg mb-4">{country.name.common}</h3>
 					<p className="font-semibold text-sm mb-2">
 						Population:{' '}
 						<span className=" font-light">{country.population}</span>

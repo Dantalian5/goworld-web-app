@@ -36,7 +36,7 @@ type FilterType = {
 	region: 'none' | 'Africa' | 'America' | 'Asia' | 'Europe' | 'Oceania';
 };
 
-const Filter = () => {
+const Filter = ({filterFn}: any) => {
 	const [filter, setFilter] = useState<FilterType>({
 		country: '',
 		region: 'none',
@@ -45,6 +45,7 @@ const Filter = () => {
 
 	const onSubmit = (e: any) => {
 		e.preventDefault();
+		filterFn(filter);
 	};
 	const selectRegion = (e: any) => {
 		setFilter((prev) => ({
@@ -91,12 +92,12 @@ const Filter = () => {
 				/>
 			</div>
 			<div className="relative">
-				<button
-					className="flex items-center justify-between gap-x-[62px] min-w-[200px] px-6 py-4 bg-white dark:bg-dblue-100 rounded-s"
+				<div
+					className="flex items-center justify-between gap-x-[62px] min-w-[200px] px-6 py-4 bg-white dark:bg-dblue-100 rounded-s cursor-pointer"
 					onClick={() => setRegionState((prev) => !prev)}>
 					{filter.region === 'none' ? 'Filter by Region' : filter.region}
 					{svgArrow}
-				</button>
+				</div>
 				<ul
 					className={`absolute w-full -bottom-1 translate-y-full bg-white dark:bg-dblue-100 rounded-s px-6 py-4 flex flex-col gap-y-2 ${
 						regionState ? 'flex' : 'hidden'
@@ -109,3 +110,5 @@ const Filter = () => {
 };
 
 export default Filter;
+
+// todo : importante finalizar filtro on main.

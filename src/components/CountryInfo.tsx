@@ -20,51 +20,50 @@ const CountryInfo = () => {
 	const country = useLocation().state;
 	const infoBlock = (label: string, value: string) => {
 		return (
-			<div className="text-sm font-semibold mb-3">
+			<div className="font-semibold mb-3">
 				{label}: <span className="font-light">{value}</span>
 			</div>
 		);
 	};
 	console.log();
 	return (
-		<div className="px-7 py-10 font-nunito text-dblue-300 dark:text-white">
+		<div className="px-7 md:px-desktop py-10 md:py-20 font-nunito text-dblue-300 dark:text-white">
 			<Link to={'/'}>
-				<button className="flex items-center justify-center gap-x-2 shadow-btn px-6 py-1.5">
+				<button className="flex items-center justify-center gap-x-2 shadow-btn px-6 md:px-10 py-1.5 md:py-2 rounded-s text-sm md:text-base ">
 					{svgBack} Back
 				</button>
 			</Link>
-			<div className="overflow-hidden rounded-s mt-16 mb-8">
-				<img
-					src={country.flags.png}
-					alt="country's flag"
-					className="w-full"
-				/>
-			</div>
-			<h3 className="font-extrabold text-2xl mb-6">{country.name}</h3>
-			<div className="mb-8">
-				{infoBlock('Native Name', country.nativeName)}
-				{infoBlock('Population', country.population)}
-				{infoBlock('Region', country.region)}
-				{infoBlock('Sub Region', country.subregion)}
-				{infoBlock('Capital', country.capital)}
-			</div>
-			<div className="mb-8">
-				{infoBlock('Top Level Domain', country.topLevelDomain)}
-				{infoBlock(
-					'Currencies',
-					country.currencies.map((item: any) => item.name).join(', ')
-				)}
-				{infoBlock(
-					'Languages',
-					country.languages.map((item: any) => item.name).join(', ')
-				)}
-			</div>
-			<div>
-				<h4 className="text-base font-semibold">Border Countries:</h4>
-				<div>{country.borders.join()}</div>
+			<div className="flex flex-wrap gap-x-[145px] gap-y-8 mt-16 justify-evenly items-start">
+				<div className="overflow-hidden rounded-s flex-flag">
+					<img
+						src={country.flags.png}
+						alt={country.flags.alt}
+						className="w-full"
+					/>
+				</div>
+				<div className="flex-flag flex flex-wrap gap-y-8 justify-between">
+					<h3 className="font-extrabold text-2xl lg:text-[2rem] w-full">
+						{country.name.common}
+					</h3>
+					<div className="text-sm lg:text-base">
+						{infoBlock('Native Name', country.name.official)}
+						{infoBlock('Population', country.population)}
+						{infoBlock('Region', country.region)}
+						{infoBlock('Sub Region', country.subregion)}
+						{infoBlock('Capital', country.capital)}
+					</div>
+					<div className="text-sm lg:text-base">
+						{infoBlock('Top Level Domain', country.tld.join(', '))}
+						{infoBlock('Currencies', 'yolo')}
+						{infoBlock('Languages', 'yolo')}
+					</div>
+					<div className="w-full">
+						<h4 className="text-base font-semibold">Border Countries:</h4>
+						<div>{country.borders.join()}</div>
+					</div>
+				</div>
 			</div>
 		</div>
 	);
 };
-
 export default CountryInfo;

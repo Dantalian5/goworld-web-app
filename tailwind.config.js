@@ -30,6 +30,7 @@ export default {
 		extend: {
 			flex: {
 				card: '0 1 16.5rem',
+				flag: '1 1 20rem',
 			},
 			padding: {
 				mobile: 'clamp(1rem, 4%, 5rem)',
