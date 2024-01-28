@@ -27,7 +27,7 @@ const CountryInfo = () => {
 	};
 	console.log();
 	return (
-		<div className="px-7 py-10 font-nunito text-dblue-300">
+		<div className="px-7 py-10 font-nunito text-dblue-300 dark:text-white">
 			<Link to={'/'}>
 				<button className="flex items-center justify-center gap-x-2 shadow-btn px-6 py-1.5">
 					{svgBack} Back

@@ -1,4 +1,5 @@
 import {useEffect, useState} from 'react';
+import {Link} from 'react-router-dom';
 
 const svgMoon = (
 	<svg
@@ -102,13 +103,14 @@ const Header = () => {
 		}
 	}, [theme]);
 	return (
-		<header className=" font-nunito flex justify-between items-center px-4 py-8 shadow-s bg-white dark:bg-dblue-100">
-			<h1 className=" font-extrabold text-sm text-dblue-300 dark:text-white">
-				Where in the world?
-			</h1>
-
+		<header className=" font-nunito flex justify-between items-center px-mobile md:px-desktop py-8 shadow-s bg-white dark:bg-dblue-100">
+			<Link to={'/'}>
+				<h1 className=" font-extrabold text-sm lg:text-2xl text-dblue-300 dark:text-white">
+					Where in the world?
+				</h1>
+			</Link>
 			<button
-				className=" font-semibold text-sm flex gap-2 items-center text-dblue-300 dark:text-white"
+				className=" font-semibold text-sm lg:text-base flex gap-2 items-center text-dblue-300 dark:text-white"
 				onClick={() =>
 					setTheme((prev) => (prev === 'light' ? 'dark' : 'light'))
 				}>

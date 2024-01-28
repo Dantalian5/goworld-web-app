@@ -18,8 +18,8 @@ function App() {
 
 	return (
 		<div className=" bg-dgray-100 dark:bg-dblue-200 min-h-svh">
-			<Header />
 			<BrowserRouter>
+				<Header />
 				<Routes>
 					<Route
 						path="/"

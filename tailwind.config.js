@@ -31,6 +31,10 @@ export default {
 			flex: {
 				card: '0 1 16.5rem',
 			},
+			padding: {
+				mobile: 'clamp(1rem, 4%, 5rem)',
+				desktop: 'clamp(1rem, 6%, 5rem)',
+			},
 		},
 	},
 	plugins: [],

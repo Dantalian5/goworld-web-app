@@ -9,9 +9,9 @@ const Main = () => {
 		/>
 	));
 	return (
-		<main className="px-4 py-6">
+		<main className="px-mobile md:px-desktop py-6 md:py-12">
 			<Filter />
-			<div className="flex flex-wrap justify-center items-center mt-8 gap-y-10">
+			<div className="flex flex-wrap justify-evenly items-stretch mt-8 md:mt-12 gap-y-10 gap-x-14">
 				{countryList}
 			</div>
 		</main>

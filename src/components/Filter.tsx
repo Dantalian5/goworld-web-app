@@ -63,15 +63,16 @@ const Filter = () => {
 	].map((item) => (
 		<li
 			key={item}
-			onClick={selectRegion}>
+			onClick={selectRegion}
+			className=" cursor-pointer">
 			{item === 'none' ? '-- All --' : item}
 		</li>
 	));
 	return (
 		<form
 			onSubmit={onSubmit}
-			className=" font-nunito font-normal text-xs text-dblue-300 dark:text-white flex flex-wrap gap-y-10">
-			<div className="flex flex-auto gap-6 items-center relative bg-white dark:bg-dblue-100 rounded-s px-8">
+			className=" font-nunito font-normal text-xs lg:text-sm text-dblue-300 dark:text-white flex flex-wrap justify-between items-center gap-10">
+			<div className="flex flex-auto max-w-[480px]  gap-6 items-center relative bg-white dark:bg-dblue-100 rounded-s px-8">
 				{/* <label
 					htmlFor="country-filter"
 					className="absolute top-1/2 -translate-y-1/2">

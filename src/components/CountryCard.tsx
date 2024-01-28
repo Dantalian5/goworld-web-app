@@ -7,7 +7,7 @@ const CountryCard = ({country}: any) => {
 			state={country}
 			className="flex-card">
 			<div className=" w-full bg-white dark:bg-dblue-100 shadow-card rounded-s overflow-hidden cursor-pointer">
-				<div>
+				<div className="w-full h-40 flex alignitems-center justify-center">
 					<img
 						src={country.flags.png}
 						alt="the country flag"
