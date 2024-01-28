@@ -33,7 +33,7 @@ const svgArrow = (
 );
 type FilterType = {
 	country: string;
-	region: 'none' | 'Africa' | 'America' | 'Asia' | 'Europe' | 'Oceania';
+	region: 'none' | 'Africa' | 'Americas' | 'Asia' | 'Europe' | 'Oceania';
 };
 
 const Filter = ({filterFn}: any) => {
@@ -57,7 +57,7 @@ const Filter = ({filterFn}: any) => {
 	const listItems = [
 		'none',
 		'Africa',
-		'America',
+		'Americas',
 		'Asia',
 		'Europe',
 		'Oceania',
