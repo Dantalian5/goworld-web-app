@@ -41,13 +41,34 @@ const Filter = () => {
 		region: 'none',
 	});
 	const [regionState, setRegionState] = useState<boolean>(false);
-	function selectRegion(e: any) {
-		setFilter((prev) => ({...prev, region: e.target.innerText}));
+
+	const onSubmit = (e: any) => {
+		e.preventDefault();
+	};
+	const selectRegion = (e: any) => {
+		setFilter((prev) => ({
+			...prev,
+			region: e.target.innerText === '-- All --' ? 'none' : e.target.innerText,
+		}));
 		setRegionState(false);
-	}
+	};
+	const listItems = [
+		'none',
+		'Africa',
+		'America',
+		'Asia',
+		'Europe',
+		'Oceania',
+	].map((item) => (
+		<li
+			key={item}
+			onClick={selectRegion}>
+			{item === 'none' ? '-- All --' : item}
+		</li>
+	));
 	return (
 		<form
-			onSubmit={(e) => e.preventDefault()}
+			onSubmit={onSubmit}
 			className=" font-nunito font-normal text-xs text-dblue-300 flex flex-wrap gap-y-10">
 			<div className="flex flex-auto gap-6 items-center relative bg-white rounded-s px-8">
 				{/* <label
@@ -78,27 +99,7 @@ const Filter = () => {
 					className={`absolute w-full -bottom-1 translate-y-full bg-white rounded-s px-6 py-4 flex flex-col gap-y-2 ${
 						regionState ? 'flex' : 'hidden'
 					}`}>
-					<li>
-						<button
-							onClick={() => setFilter((prev) => ({...prev, region: 'none'}))}>
-							-- All --
-						</button>
-					</li>
-					<li>
-						<button onClick={selectRegion}>Africa</button>
-					</li>
-					<li>
-						<button onClick={selectRegion}>America</button>
-					</li>
-					<li>
-						<button onClick={selectRegion}>Asia</button>
-					</li>
-					<li>
-						<button onClick={selectRegion}>Europe</button>
-					</li>
-					<li>
-						<button onClick={selectRegion}>Oceania</button>
-					</li>
+					{listItems}
 				</ul>
 			</div>
 		</form>
