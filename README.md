@@ -29,7 +29,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/Dantalian5/goworld-web-app">
+  <a href="https://github.com/Dantalian5/worldcountries-web-app">
     <img src="images/favicon.png" alt="Logo" width="80" height="80">
   </a>
 
@@ -40,11 +40,11 @@
     <a href="https://www.frontendmentor.io/challenges/rest-countries-api-with-color-theme-switcher-5cacc469fec04111f7b848ca">REST Countries API with color theme switcher challenge on Frontend Mentor</a>.
     <br />
     <br />
-    <a href="https://github.com/Dantalian5/goworld-web-app">Live Site</a>
+    <a href="https://github.com/Dantalian5/worldcountries-web-app">Live Site</a>
     ·
-    <a href="https://github.com/Dantalian5/goworld-web-app/issues">Report Bug</a>
+    <a href="https://github.com/Dantalian5/worldcountries-web-app/issues">Report Bug</a>
     ·
-    <a href="https://github.com/Dantalian5/goworld-web-app/issues">Request Feature</a>
+    <a href="https://github.com/Dantalian5/worldcountries-web-app/issues">Request Feature</a>
   </p>
 </div>
 
@@ -78,13 +78,12 @@
 
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+[![Product Name Screen Shot][product-screenshot]](images/screenshot.png)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ### Built With
 
-- Semantic HTML5 markup
 - Mobile-first workflow
 - [React](https://reactjs.org/) - JS library
 - [TypeScript](https://www.typescriptlang.org/) - JS library
@@ -105,7 +104,7 @@
 
 1. Clone the repo
    ```sh
-   git clone https://github.com/Dantalian5/goworld-web-app.git
+   git clone https://github.com/Dantalian5/worldcountries-web-app.git
    ```
 2. Install NPM packages
    ```sh
@@ -136,14 +135,19 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 
 Users should be able to:
 
-- [ ] See all countries from the API on the homepage
-- [ ] Search for a country using an `input` field
-- [ ] Filter countries by region
-- [ ] Click on a country to see more detailed information on a separate page
-- [ ] Click through to the border countries on the detail page
-- [ ] Toggle the color scheme between light and dark mode
+- [x] See all countries from the API on the homepage
+- [x] Search for a country using an `input` field
+- [x] Filter countries by region
+- [x] Click on a country to see more detailed information on a separate page
+- [x] Click through to the border countries on the detail page
+- [x] Toggle the color scheme between light and dark mode
 
-See the [open issues](https://github.com/Dantalian5/goworld-web-app/issues) for a full list of proposed features (and known issues).
+Personal additions:
+
+- [x] Theme toggler animation using svgs
+- [x] Loading & Error animation on page load and fetch errors
+
+See the [open issues](https://github.com/Dantalian5/worldcountries-web-app/issues) for a full list of proposed features (and known issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -182,7 +186,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 - Linkedin - [Marcos Valenzuela](https://www.linkedin.com/in/marcos-valenzuela-coding)
 - Twitter - [@Dantalian5](https://www.twitter.com/Dantalian5)
 
-Project Link: [https://github.com/Dantalian5/goworld-web-app](https://github.com/Dantalian5/goworld-web-app)
+Project Link: [https://github.com/Dantalian5/worldcountries-web-app](https://github.com/Dantalian5/worldcountries-web-app)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -197,16 +201,16 @@ Project Link: [https://github.com/Dantalian5/goworld-web-app](https://github.com
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 
-[contributors-shield]: https://img.shields.io/github/contributors/Dantalian5/goworld-web-app.svg?style=for-the-badge
-[contributors-url]: https://github.com/Dantalian5/goworld-web-app/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/Dantalian5/goworld-web-app.svg?style=for-the-badge
-[forks-url]: https://github.com/Dantalian5/goworld-web-app/network/members
-[stars-shield]: https://img.shields.io/github/stars/Dantalian5/goworld-web-app.svg?style=for-the-badge
-[stars-url]: https://github.com/Dantalian5/goworld-web-app/stargazers
-[issues-shield]: https://img.shields.io/github/issues/Dantalian5/goworld-web-app.svg?style=for-the-badge
-[issues-url]: https://github.com/Dantalian5/goworld-web-app/issues
-[license-shield]: https://img.shields.io/github/license/Dantalian5/goworld-web-app.svg?style=for-the-badge
-[license-url]: https://github.com/Dantalian5/goworld-web-app/blob/master/LICENSE.txt
+[contributors-shield]: https://img.shields.io/github/contributors/Dantalian5/worldcountries-web-app.svg?style=for-the-badge
+[contributors-url]: https://github.com/Dantalian5/worldcountries-web-app/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/Dantalian5/worldcountries-web-app.svg?style=for-the-badge
+[forks-url]: https://github.com/Dantalian5/worldcountries-web-app/network/members
+[stars-shield]: https://img.shields.io/github/stars/Dantalian5/worldcountries-web-app.svg?style=for-the-badge
+[stars-url]: https://github.com/Dantalian5/worldcountries-web-app/stargazers
+[issues-shield]: https://img.shields.io/github/issues/Dantalian5/worldcountries-web-app.svg?style=for-the-badge
+[issues-url]: https://github.com/Dantalian5/worldcountries-web-app/issues
+[license-shield]: https://img.shields.io/github/license/Dantalian5/worldcountries-web-app.svg?style=for-the-badge
+[license-url]: https://github.com/Dantalian5/worldcountries-web-app/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/marcos-valenzuela-coding
 [product-screenshot]: images/screenshot.png
