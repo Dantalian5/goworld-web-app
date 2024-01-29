@@ -1,4 +1,4 @@
-import {useState} from 'react';
+import {useEffect, useState} from 'react';
 
 const svgSearch = (
 	<svg
@@ -47,6 +47,9 @@ const Filter = ({filterFn}: any) => {
 		e.preventDefault();
 		filterFn(filter);
 	};
+	useEffect(() => {
+		filterFn(filter);
+	}, [filter]);
 	const selectRegion = (e: any) => {
 		setFilter((prev) => ({
 			...prev,

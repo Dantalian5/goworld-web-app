@@ -62,14 +62,18 @@ const Main = () => {
 		<main className="px-mobile md:px-desktop py-6 md:py-12">
 			<Filter filterFn={setFilter} />
 			<div className="flex flex-wrap justify-evenly items-stretch mt-8 md:mt-12 gap-y-10 gap-x-14">
-				{dataArray.length > 0
-					? dataArray.slice(0, loadNumber).map((country: any) => (
-							<CountryCard
-								key={country.name.common}
-								country={country}
-							/>
-					  ))
-					: 'No data found'}
+				{dataArray.length > 0 ? (
+					dataArray.slice(0, loadNumber).map((country: any) => (
+						<CountryCard
+							key={country.name.common}
+							country={country}
+						/>
+					))
+				) : (
+					<p className="font-extrabold text-base w-full py-10 text-center text-dblue-300 dark:text-white">
+						'No data found'
+					</p>
+				)}
 			</div>
 			<button
 				className="flex items-center justify-center gap-x-2 shadow-btn px-6 md:px-10 py-1.5 md:py-2 rounded-s text-base dark:bg-dblue-100 w-fit text-dblue-300 dark:text-white my-10 mx-auto"
