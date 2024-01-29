@@ -1,102 +1,155 @@
 [
 	{
 		"name": {
-			"common": "Belgium",
-			"official": "Kingdom of Belgium",
+			"common": "French Southern and Antarctic Lands",
+			"official": "Territory of the French Southern and Antarctic Lands",
 			"nativeName": {
-				"deu": {"official": "KÃ¶nigreich Belgien", "common": "Belgien"},
-				"fra": {"official": "Royaume de Belgique", "common": "Belgique"},
-				"nld": {"official": "Koninkrijk BelgiÃ«", "common": "BelgiÃ«"}
+				"fra": {
+					"official": "Territoire des Terres australes et antarctiques franÃ§aises",
+					"common": "Terres australes et antarctiques franÃ§aises"
+				}
 			}
 		},
-		"tld": [".be"],
-		"cca2": "BE",
-		"ccn3": "056",
-		"cca3": "BEL",
-		"cioc": "BEL",
-		"independent": true,
+		"tld": [".tf"],
+		"cca2": "TF",
+		"ccn3": "260",
+		"cca3": "ATF",
+		"independent": false,
 		"status": "officially-assigned",
-		"unMember": true,
+		"unMember": false,
 		"currencies": {"EUR": {"name": "Euro", "symbol": "â‚¬"}},
-		"idd": {"root": "+3", "suffixes": ["2"]},
-		"capital": ["Brussels"],
-		"altSpellings": [
-			"BE",
-			"BelgiÃ«",
-			"Belgie",
-			"Belgien",
-			"Belgique",
-			"Kingdom of Belgium",
-			"Koninkrijk BelgiÃ«",
-			"Royaume de Belgique",
-			"KÃ¶nigreich Belgien"
-		],
-		"region": "Europe",
-		"subregion": "Western Europe",
-		"languages": {"deu": "German", "fra": "French", "nld": "Dutch"},
+		"idd": {"root": "+2", "suffixes": ["62"]},
+		"capital": ["Port-aux-FranÃ§ais"],
+		"altSpellings": ["TF", "French Southern Territories"],
+		"region": "Antarctic",
+		"languages": {"fra": "French"},
 		"translations": {
-			"ara": {"official": "Ù…Ù…Ù„ÙƒØ© Ø¨Ù„Ø¬ÙŠÙƒØ§", "common": "Ø¨Ù„Ø¬ÙŠÙƒØ§"},
-			"bre": {"official": "Rouantelezh Belgia", "common": "Belgia"},
-			"ces": {"official": "BelgickÃ© krÃ¡lovstvÃ­", "common": "Belgie"},
-			"cym": {"official": "Teyrnas Gwlad Belg", "common": "Gwlad Belg"},
-			"deu": {"official": "KÃ¶nigreich Belgien", "common": "Belgien"},
-			"est": {"official": "Belgia Kuningriik", "common": "Belgia"},
-			"fin": {"official": "Belgian kuningaskunta", "common": "Belgia"},
-			"fra": {"official": "Royaume de Belgique", "common": "Belgique"},
-			"hrv": {"official": "Kraljevina Belgija", "common": "Belgija"},
-			"hun": {"official": "Belga KirÃ¡lysÃ¡g", "common": "Belgium"},
-			"ita": {"official": "Regno del Belgio", "common": "Belgio"},
-			"jpn": {"official": "ãƒ™ãƒ«ã‚®ãƒ¼çŽ‹å›½", "common": "ãƒ™ãƒ«ã‚®ãƒ¼"},
-			"kor": {"official": "ë²¨ê¸°ì— ì™•êµ­", "common": "ë²¨ê¸°ì—"},
-			"nld": {"official": "Koninkrijk BelgiÃ«", "common": "BelgiÃ«"},
-			"per": {"official": "Ù¾Ø§Ø¯Ø´Ø§Ù‡ÛŒ Ø¨Ù„Ú˜ÛŒÚ©", "common": "Ø¨Ù„Ú˜ÛŒÚ©"},
-			"pol": {"official": "KrÃ³lestwo Belgii", "common": "Belgia"},
-			"por": {"official": "Reino da BÃ©lgica", "common": "BÃ©lgica"},
+			"ara": {
+				"official": "Ù…Ù‚Ø§Ø·Ø¹Ø§Øª ÙˆØ£Ù‚Ø§Ù„ÙŠÙ… Ù…Ø§ ÙˆØ±Ø§Ø¡ Ø§Ù„Ø¨Ø­Ø§Ø± Ø§Ù„ÙØ±Ù†Ø³ÙŠØ©",
+				"common": "Ø£Ø±Ø§Ø¶ ÙØ±Ù†Ø³ÙŠØ© Ø¬Ù†ÙˆØ¨ÙŠØ© ÙˆØ£Ù†ØªØ§Ø±ØªÙŠÙƒÙŠØ©"
+			},
+			"bre": {
+				"official": "Tiriad DouaroÃ¹ Aostral hag Antarktikel FraÃ±s",
+				"common": "DouaroÃ¹ Aostral hag Antarktikel FraÃ±s"
+			},
+			"ces": {
+				"official": "Teritorium FrancouzskÃ¡ jiÅ¾nÃ­ a antarktickÃ¡ ÃºzemÃ­",
+				"common": "FrancouzskÃ¡ jiÅ¾nÃ­ a antarktickÃ¡ ÃºzemÃ­"
+			},
+			"cym": {
+				"official": "Territory of the French Southern and Antarctic Lands",
+				"common": "French Southern and Antarctic Lands"
+			},
+			"deu": {
+				"official": "Gebiet der FranzÃ¶sisch SÃ¼d- und Antarktisgebiete",
+				"common": "FranzÃ¶sische SÃ¼d- und Antarktisgebiete"
+			},
+			"est": {
+				"official": "Prantsuse LÃµunaalad",
+				"common": "Prantsuse LÃµunaalad"
+			},
+			"fin": {
+				"official": "Ranskan etelÃ¤iset ja antarktiset alueet",
+				"common": "Ranskan etelÃ¤iset ja antarktiset alueet"
+			},
+			"fra": {
+				"official": "Territoire des Terres australes et antarctiques franÃ§aises",
+				"common": "Terres australes et antarctiques franÃ§aises"
+			},
+			"hrv": {
+				"official": "Teritoriju Francuski juÅ¾ni i antarktiÄki teritoriji",
+				"common": "Francuski juÅ¾ni i antarktiÄki teritoriji"
+			},
+			"hun": {
+				"official": "Francia dÃ©li Ã©s antarktiszi terÃ¼letek",
+				"common": "Francia dÃ©li Ã©s antarktiszi terÃ¼letek"
+			},
+			"ita": {
+				"official": "Territorio della australi e antartiche francesi Terre",
+				"common": "Territori Francesi del Sud"
+			},
+			"jpn": {
+				"official": "ãƒ•ãƒ©ãƒ³ã‚¹é ˜å—æ–¹Â·å—æ¥µåœ°åŸŸã®é ˜åœŸ",
+				"common": "ãƒ•ãƒ©ãƒ³ã‚¹é ˜å—æ–¹ãƒ»å—æ¥µåœ°åŸŸ"
+			},
+			"kor": {
+				"official": "í”„ëž‘ìŠ¤ë ¹ ë‚¨ë¶€ì™€ ë‚¨ê·¹ ì§€ì—­",
+				"common": "í”„ëž‘ìŠ¤ë ¹ ë‚¨ë¶€ì™€ ë‚¨ê·¹ ì§€ì—­"
+			},
+			"nld": {
+				"official": "Grondgebied van de Franse Zuidelijke en Antarctische gebieden",
+				"common": "Franse Gebieden in de zuidelijke Indische Oceaan"
+			},
+			"per": {
+				"official": "Ø³Ø±Ø²Ù…ÛŒÙ†â€ŒÙ‡Ø§ÛŒ Ø¬Ù†ÙˆØ¨ÛŒ Ùˆ Ø¬Ù†ÙˆØ¨Ú¯Ø§Ù†ÛŒ ÙØ±Ø§Ù†Ø³Ù‡",
+				"common": "Ø³Ø±Ø²Ù…ÛŒÙ†â€ŒÙ‡Ø§ÛŒ Ø¬Ù†ÙˆØ¨ÛŒ Ùˆ Ø¬Ù†ÙˆØ¨Ú¯Ø§Ù†ÛŒ ÙØ±Ø§Ù†Ø³Ù‡"
+			},
+			"pol": {
+				"official": "Francuskie Terytoria PoÅ‚udniowe i Antarktyczne",
+				"common": "Francuskie Terytoria PoÅ‚udniowe i Antarktyczne"
+			},
+			"por": {
+				"official": "TerritÃ³rio do Sul e AntÃ¡rtica Francesa",
+				"common": "Terras Austrais e AntÃ¡rticas Francesas"
+			},
 			"rus": {
-				"official": "ÐšÐ¾Ñ€Ð¾Ð»ÐµÐ²ÑÑ‚Ð²Ð¾ Ð‘ÐµÐ»ÑŒÐ³Ð¸Ñ",
-				"common": "Ð‘ÐµÐ»ÑŒÐ³Ð¸Ñ"
+				"official": "Ð¢ÐµÑ€Ñ€Ð¸Ñ‚Ð¾Ñ€Ð¸Ñ Ð¤Ñ€Ð°Ð½Ñ†ÑƒÐ·ÑÐºÐ¸Ðµ Ð®Ð¶Ð½Ñ‹Ðµ Ð¸ ÐÐ½Ñ‚Ð°Ñ€ÐºÑ‚Ð¸Ñ‡ÐµÑÐºÐ¸Ðµ Ð·ÐµÐ¼Ð»Ð¸",
+				"common": "Ð¤Ñ€Ð°Ð½Ñ†ÑƒÐ·ÑÐºÐ¸Ðµ Ð®Ð¶Ð½Ñ‹Ðµ Ð¸ ÐÐ½Ñ‚Ð°Ñ€ÐºÑ‚Ð¸Ñ‡ÐµÑÐºÐ¸Ðµ Ñ‚ÐµÑ€Ñ€Ð¸Ñ‚Ð¾Ñ€Ð¸Ð¸"
 			},
-			"slk": {"official": "BelgickÃ© krÃ¡Ä¾ovstvo", "common": "Belgicko"},
-			"spa": {"official": "Reino de BÃ©lgica", "common": "BÃ©lgica"},
+			"slk": {
+				"official": "FrancÃºzske juÅ¾nÃ© a antarktickÃ© Ãºzemia",
+				"common": "FrancÃºzske juÅ½nÃ© a antarktickÃ© Ãºzemia"
+			},
+			"spa": {
+				"official": "Territorio del FrancÃ©s Tierras australes y antÃ¡rticas",
+				"common": "Tierras Australes y AntÃ¡rticas Francesas"
+			},
 			"srp": {
-				"official": "ÐšÑ€Ð°Ñ™ÐµÐ²Ð¸Ð½Ð° Ð‘ÐµÐ»Ð³Ð¸Ñ˜Ð°",
-				"common": "Ð‘ÐµÐ»Ð³Ð¸Ñ˜Ð°"
+				"official": "Ð¤Ñ€Ð°Ð½Ñ†ÑƒÑÐºÐµ Ñ˜ÑƒÐ¶Ð½Ðµ Ð¸ Ð°Ð½Ñ‚Ð°Ñ€ÐºÑ‚Ð¸Ñ‡ÐºÐµ Ð·ÐµÐ¼Ñ™Ðµ",
+				"common": "Ð¤Ñ€Ð°Ð½Ñ†ÑƒÑÐºÐµ Ñ˜ÑƒÐ¶Ð½Ðµ Ð¸ Ð°Ð½Ñ‚Ð°Ñ€ÐºÑ‚Ð¸Ñ‡ÐºÐµ Ð·ÐµÐ¼Ñ™Ðµ"
 			},
-			"swe": {"official": "Konungariket Belgien", "common": "Belgien"},
-			"tur": {"official": "BelÃ§ika KrallÄ±ÄŸÄ±", "common": "BelÄŸika"},
-			"urd": {"official": "Ù…Ù…Ù„Ú©ØªÙ Ø¨Ù„Ø¬Ø¦ÛŒÙ…", "common": "Ø¨Ù„Ø¬Ø¦ÛŒÙ…"},
-			"zho": {"official": "æ¯”åˆ©æ—¶çŽ‹å›½", "common": "æ¯”åˆ©æ—¶"}
+			"swe": {
+				"official": "Franska syd- och Antarktisterritorierna",
+				"common": "Franska sÃ¶dra territorierna"
+			},
+			"tur": {
+				"official": "FransÄ±z GÃ¼ney ve Antarktika TopraklarÄ±",
+				"common": "FransÄ±z GÃ¼ney ve Antarktika TopraklarÄ±"
+			},
+			"urd": {
+				"official": "Ø³Ø±Ø²Ù…ÛŒÙ†Ù Ø¬Ù†ÙˆØ¨ÛŒ ÙØ±Ø§Ù†Ø³ÛŒØ³ÛŒÛ Ùˆ Ø§Ù†Ù¹Ø§Ø±Ú©Ù¹ÛŒÚ©Û",
+				"common": "Ø³Ø±Ø²Ù…ÛŒÙ† Ø¬Ù†ÙˆØ¨ÛŒ ÙØ±Ø§Ù†Ø³ÛŒØ³ÛŒÛ Ùˆ Ø§Ù†Ù¹Ø§Ø±Ú©Ù¹ÛŒÚ©Ø§"
+			},
+			"zho": {
+				"official": "æ³•å›½å—éƒ¨å’Œå—æžåœŸåœ°",
+				"common": "æ³•å›½å—éƒ¨å’Œå—æžåœŸåœ°"
+			}
 		},
-		"latlng": [50.83333333, 4.0],
+		"latlng": [-49.25, 69.167],
 		"landlocked": false,
-		"borders": ["FRA", "DEU", "LUX", "NLD"],
-		"area": 30528.0,
+		"area": 7747.0,
 		"demonyms": {
-			"eng": {"f": "Belgian", "m": "Belgian"},
-			"fra": {"f": "Belge", "m": "Belge"}
+			"eng": {"f": "French", "m": "French"},
+			"fra": {"f": "FranÃ§aise", "m": "FranÃ§ais"}
 		},
-		"flag": "\uD83C\uDDE7\uD83C\uDDEA",
+		"flag": "\uD83C\uDDF9\uD83C\uDDEB",
 		"maps": {
-			"googleMaps": "https://goo.gl/maps/UQQzat85TCtPRXAL8",
-			"openStreetMaps": "https://www.openstreetmap.org/relation/52411"
+			"googleMaps": "https://goo.gl/maps/6ua6CX1m4w1xF2Em7",
+			"openStreetMaps": "https://www.openstreetmap.org/relation/2186658"
 		},
-		"population": 11555997,
-		"gini": {"2018": 27.2},
-		"fifa": "BEL",
-		"car": {"signs": ["B"], "side": "right"},
-		"timezones": ["UTC+01:00"],
-		"continents": ["Europe"],
+		"population": 400,
+		"car": {"signs": [""], "side": "right"},
+		"timezones": ["UTC+05:00"],
+		"continents": ["Antarctica"],
 		"flags": {
-			"png": "https://flagcdn.com/w320/be.png",
-			"svg": "https://flagcdn.com/be.svg",
-			"alt": "The flag of Belgium is composed of three equal vertical bands of black, yellow and red."
+			"png": "https://flagcdn.com/w320/tf.png",
+			"svg": "https://flagcdn.com/tf.svg"
 		},
 		"coatOfArms": {
-			"png": "https://mainfacts.com/media/images/coats_of_arms/be.png",
-			"svg": "https://mainfacts.com/media/images/coats_of_arms/be.svg"
+			"png": "https://mainfacts.com/media/images/coats_of_arms/tf.png",
+			"svg": "https://mainfacts.com/media/images/coats_of_arms/tf.svg"
 		},
 		"startOfWeek": "monday",
-		"capitalInfo": {"latlng": [50.83, 4.33]},
-		"postalCode": {"format": "####", "regex": "^(\\d{4})$"}
+		"capitalInfo": {"latlng": [48.81, -1.4]}
 	}
 ]
