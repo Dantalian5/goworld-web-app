@@ -104,7 +104,9 @@ const Header = () => {
 	}, [theme]);
 	return (
 		<header className=" font-nunito flex justify-between items-center px-mobile md:px-desktop py-8 shadow-s bg-white dark:bg-dblue-100">
-			<Link to={'/'}>
+			<Link
+				to={'/'}
+				reloadDocument>
 				<h1 className=" font-extrabold text-sm lg:text-2xl text-dblue-300 dark:text-white">
 					Where in the world?
 				</h1>
