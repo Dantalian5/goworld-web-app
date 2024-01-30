@@ -40,7 +40,7 @@
     <a href="https://www.frontendmentor.io/challenges/rest-countries-api-with-color-theme-switcher-5cacc469fec04111f7b848ca">REST Countries API with color theme switcher challenge on Frontend Mentor</a>.
     <br />
     <br />
-    <a href="https://github.com/Dantalian5/worldcountries-web-app">Live Site</a>
+    <a href="https://worldcountries-web-app.vercel.app">Live Site</a>
     ·
     <a href="https://github.com/Dantalian5/worldcountries-web-app/issues">Report Bug</a>
     ·
@@ -79,6 +79,8 @@
 ## About The Project
 
 [![Product Name Screen Shot][product-screenshot]](images/screenshot.png)
+
+This website, utilizing the [REST Countries API](https://restcountries.com), provides an interactive experience to explore, filter, and search for different countries around the world. Users can access detailed and specific information about each country. Moreover, the web application features two color themes, dark and light, offering a customizable and comfortable user experience.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -121,9 +123,11 @@
 
 ## Usage
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
-
-_For more examples, please refer to the [Documentation](https://example.com)_
+1. Open the web app in your browser
+   ```sh
+   http://localhost:5173
+   ```
+   and see the magic :)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -146,6 +150,7 @@ Personal additions:
 
 - [x] Theme toggler animation using svgs
 - [x] Loading & Error animation on page load and fetch errors
+- [ ] Add an option to download the data as a CSV on countries info
 
 See the [open issues](https://github.com/Dantalian5/worldcountries-web-app/issues) for a full list of proposed features (and known issues).
 
@@ -195,6 +200,7 @@ Project Link: [https://github.com/Dantalian5/worldcountries-web-app](https://git
 ## Acknowledgments
 
 - [FrontendMentor.io](https://www.frontendmentor.io)
+- [REST Countries API](https://restcountries.com)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
