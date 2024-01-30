@@ -1,5 +1,5 @@
 import {useState, useEffect} from 'react';
-import {Link, useLocation} from 'react-router-dom';
+import {Link, useLocation, useNavigate} from 'react-router-dom';
 import {fetchData} from '@/utils/api';
 
 const svgBack = (
@@ -40,6 +40,7 @@ const CountryInfo = () => {
 	const code = location.state;
 	const [country, setCountry] = useState<any>('');
 	const [loading, setLoading] = useState<boolean>(true);
+	const navigate = useNavigate();
 	const infoBlock = (label: string, value: string) => {
 		return (
 			<div className="font-semibold mb-3">
@@ -58,11 +59,16 @@ const CountryInfo = () => {
 	}, [location]);
 	return (
 		<div className="px-7 md:px-desktop py-10 md:py-20 font-nunito text-dblue-300 dark:text-white">
-			<Link
+			{/* <Link
 				to={'/'}
 				className="flex items-center justify-center gap-x-2 shadow-btn px-6 md:px-10 py-1.5 md:py-2 rounded-s text-sm md:text-base dark:bg-dblue-100 w-fit">
 				{svgBack} Back
-			</Link>
+			</Link> */}
+			<button
+				onClick={() => navigate(-1)}
+				className="flex items-center justify-center gap-x-2 shadow-btn px-6 md:px-10 py-1.5 md:py-2 rounded-s text-sm md:text-base dark:bg-dblue-100 w-fit">
+				{svgBack} Back
+			</button>
 			{loading ? (
 				<div
 					role="status"
