@@ -56,7 +56,6 @@ const CountryInfo = () => {
 	useEffect(() => {
 		loadData('alpha?codes=' + code);
 	}, [location]);
-	console.log(country);
 	return (
 		<div className="px-7 md:px-desktop py-10 md:py-20 font-nunito text-dblue-300 dark:text-white">
 			<Link

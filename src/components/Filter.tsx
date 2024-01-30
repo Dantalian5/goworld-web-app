@@ -1,4 +1,4 @@
-import {useEffect, useState} from 'react';
+import {useState} from 'react';
 
 const svgSearch = (
 	<svg
@@ -33,25 +33,21 @@ const svgArrow = (
 );
 type FilterType = {
 	country: string;
-	region: 'none' | 'Africa' | 'Americas' | 'Asia' | 'Europe' | 'Oceania';
+	region: 'none' | 'Africa' | 'America' | 'Asia' | 'Europe' | 'Oceania';
+};
+type Props = {
+	filter: FilterType;
+	setFilter: any;
 };
 
-const Filter = ({filterFn}: any) => {
-	const [filter, setFilter] = useState<FilterType>({
-		country: '',
-		region: 'none',
-	});
+const Filter = ({filter, setFilter}: Props) => {
 	const [regionState, setRegionState] = useState<boolean>(false);
-
 	const onSubmit = (e: any) => {
 		e.preventDefault();
-		filterFn(filter);
+		setFilter(filter);
 	};
-	useEffect(() => {
-		filterFn(filter);
-	}, [filter]);
 	const selectRegion = (e: any) => {
-		setFilter((prev) => ({
+		setFilter((prev: FilterType) => ({
 			...prev,
 			region: e.target.innerText === '-- All --' ? 'none' : e.target.innerText,
 		}));
@@ -89,7 +85,10 @@ const Filter = ({filterFn}: any) => {
 					id="country-filter"
 					value={filter.country}
 					onChange={(e) =>
-						setFilter((prev) => ({...prev, country: e.target.value}))
+						setFilter((prev: FilterType) => ({
+							...prev,
+							country: e.target.value,
+						}))
 					}
 					placeholder="Search for a country…"
 				/>
@@ -113,5 +112,3 @@ const Filter = ({filterFn}: any) => {
 };
 
 export default Filter;
-
-// todo : importante finalizar filtro on main.

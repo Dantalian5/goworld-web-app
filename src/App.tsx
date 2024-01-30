@@ -1,9 +1,18 @@
+import {useState} from 'react';
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
 import Header from '@/components/Header';
 import Main from '@/components/Main';
 import CountryInfo from '@/components/CountryInfo';
 
+type FilterType = {
+	country: string;
+	region: 'none' | 'Africa' | 'America' | 'Asia' | 'Europe' | 'Oceania';
+};
 function App() {
+	const [filter, setFilter] = useState<FilterType>({
+		country: '',
+		region: 'none',
+	});
 	if (
 		localStorage.theme === 'dark' ||
 		(!('theme' in localStorage) &&
@@ -23,7 +32,12 @@ function App() {
 				<Routes>
 					<Route
 						path="/"
-						element={<Main />}></Route>
+						element={
+							<Main
+								filter={filter}
+								setFilter={setFilter}
+							/>
+						}></Route>
 					<Route
 						path="/countries/:id"
 						element={<CountryInfo />}></Route>

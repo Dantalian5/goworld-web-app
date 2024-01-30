@@ -2,10 +2,7 @@ import {useEffect, useState} from 'react';
 import Filter from '@/components/Filter';
 import CountryCard from '@/components/CountryCard';
 import {fetchData} from '@/utils/api';
-type FilterType = {
-	country: string;
-	region: 'none' | 'Africa' | 'America' | 'Asia' | 'Europe' | 'Oceania';
-};
+
 const svgLoader = (
 	<svg
 		aria-hidden="true"
@@ -23,15 +20,20 @@ const svgLoader = (
 		/>
 	</svg>
 );
-const Main = () => {
+type FilterType = {
+	country: string;
+	region: 'none' | 'Africa' | 'America' | 'Asia' | 'Europe' | 'Oceania';
+};
+type Props = {
+	filter: FilterType;
+	setFilter: any;
+};
+const Main = ({filter, setFilter}: Props) => {
 	const [data, setData] = useState<any>([]);
 	const [dataArray, setDataArray] = useState<any>([]);
 	const [loadNumber, setLoadNumber] = useState<number>(8);
 	const [loading, setLoading] = useState<boolean>(false);
-	const [filter, setFilter] = useState<FilterType>({
-		country: '',
-		region: 'none',
-	});
+
 	const loadData = async (value: string) => {
 		setLoading(true);
 		const loadedData = await fetchData(value);
@@ -42,9 +44,7 @@ const Main = () => {
 		loadData('all?fields=name,flags,population,region,capital,cca3');
 	}, []);
 	useEffect(() => {
-		setDataArray(data);
-	}, [data]);
-	useEffect(() => {
+		// setDataArray(data);
 		setDataArray(
 			data.filter((item: any) => {
 				if (
@@ -56,11 +56,15 @@ const Main = () => {
 				}
 			})
 		);
-	}, [filter]);
+		setLoadNumber(8);
+	}, [data, filter]);
 
 	return (
 		<main className="px-mobile md:px-desktop py-6 md:py-12">
-			<Filter filterFn={setFilter} />
+			<Filter
+				filter={filter}
+				setFilter={setFilter}
+			/>
 			<div className="flex flex-wrap justify-evenly items-stretch mt-8 md:mt-12 gap-y-10 gap-x-14">
 				{dataArray.length > 0 ? (
 					dataArray.slice(0, loadNumber).map((country: any) => (
@@ -75,15 +79,15 @@ const Main = () => {
 					</p>
 				)}
 			</div>
-			<button
-				className="flex items-center justify-center gap-x-2 shadow-btn px-6 md:px-10 py-1.5 md:py-2 rounded-s text-base dark:bg-dblue-100 w-fit text-dblue-300 dark:text-white my-10 mx-auto"
-				onClick={() => setLoadNumber((prev) => prev + 8)}>
-				{loading ? svgLoader : 'Load More'}
-			</button>
+			{dataArray.length > 8 && (
+				<button
+					className="flex items-center justify-center gap-x-2 shadow-btn px-6 md:px-10 py-1.5 md:py-2 rounded-s text-base dark:bg-dblue-100 w-fit text-dblue-300 dark:text-white my-10 mx-auto"
+					onClick={() => setLoadNumber((prev) => prev + 8)}>
+					{loading ? svgLoader : 'Load More'}
+				</button>
+			)}
 		</main>
 	);
 };
 
 export default Main;
-
-// todo: repair on back return to default state

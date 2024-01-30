@@ -4,16 +4,16 @@
 
 @font-face {
 	font-family: 'nunito-sans';
-	src: url(assets/fonts/NunitoSans_10pt-ExtraBold.ttf);
+	src: url(/assets/fonts/NunitoSans_10pt-ExtraBold.ttf);
 	font-weight: 800;
 }
 @font-face {
 	font-family: 'nunito-sans';
-	src: url(assets/fonts/NunitoSans_10pt-SemiBold.ttf);
+	src: url(/assets/fonts/NunitoSans_10pt-SemiBold.ttf);
 	font-weight: 600;
 }
 @font-face {
 	font-family: 'nunito-sans';
-	src: url(assets/fonts/NunitoSans_10pt-Light.ttf);
+	src: url(/assets/fonts/NunitoSans_10pt-Light.ttf);
 	font-weight: 300;
 }
