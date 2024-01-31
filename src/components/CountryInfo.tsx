@@ -76,7 +76,7 @@ const CountryInfo = () => {
 					{svgLoader}
 				</div>
 			) : country !== '' ? (
-				<div className="flex flex-wrap gap-x-[145px] gap-y-8 mt-16 justify-evenly items-start">
+				<div className="flex flex-wrap gap-x-[145px] gap-y-8 mt-16  md:mt-20 justify-evenly items-start">
 					<div className="overflow-hidden rounded-s flex-flag">
 						<img
 							src={country.flags.png}
